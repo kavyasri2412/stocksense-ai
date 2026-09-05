@@ -1,6 +1,5 @@
 // Centralized API client for StockSense AI
-
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
 
 async function fetchJson(endpoint, options = {}) {
   try {
