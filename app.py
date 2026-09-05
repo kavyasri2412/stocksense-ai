@@ -17,6 +17,7 @@ from backend.routes.copilot import copilot_bp
 from backend.routes.data_mgmt import data_mgmt_bp
 
 def create_app():
+    init_db()
     app = Flask(__name__, static_folder=str(Config.FRONTEND_BUILD_DIR), static_url_path="")
     app.config.from_object(Config)
 
