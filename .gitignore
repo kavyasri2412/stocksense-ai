@@ -1,0 +1,45 @@
+# Secrets & Environment Variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+stocksense.db
+
+# Virtual Environments
+venv/
+venv311/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python cache & logs
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend dependencies/builds
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+.history/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
